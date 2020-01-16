@@ -1,0 +1,6 @@
+D:\home\edu\parallel\Infrastructure\bin\Debug\Infrastructure.dll
+D:\home\edu\parallel\Infrastructure\bin\Debug\Infrastructure.pdb
+D:\home\edu\parallel\Infrastructure\obj\Debug\Infrastructure.csprojAssemblyReference.cache
+D:\home\edu\parallel\Infrastructure\obj\Debug\Infrastructure.csproj.CoreCompileInputs.cache
+D:\home\edu\parallel\Infrastructure\obj\Debug\Infrastructure.dll
+D:\home\edu\parallel\Infrastructure\obj\Debug\Infrastructure.pdb

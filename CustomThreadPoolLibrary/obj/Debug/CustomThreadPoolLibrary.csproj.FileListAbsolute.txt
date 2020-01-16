@@ -1,0 +1,9 @@
+D:\home\edu\parallel\CustomThreadPoolLibrary\bin\Debug\CustomThreadPoolLibrary.dll
+D:\home\edu\parallel\CustomThreadPoolLibrary\bin\Debug\CustomThreadPoolLibrary.pdb
+D:\home\edu\parallel\CustomThreadPoolLibrary\bin\Debug\Infrastructure.dll
+D:\home\edu\parallel\CustomThreadPoolLibrary\bin\Debug\Infrastructure.pdb
+D:\home\edu\parallel\CustomThreadPoolLibrary\obj\Debug\CustomThreadPoolLibrary.csprojAssemblyReference.cache
+D:\home\edu\parallel\CustomThreadPoolLibrary\obj\Debug\CustomThreadPoolLibrary.csproj.CoreCompileInputs.cache
+D:\home\edu\parallel\CustomThreadPoolLibrary\obj\Debug\CustomThreadPoolLibrary.csproj.CopyComplete
+D:\home\edu\parallel\CustomThreadPoolLibrary\obj\Debug\CustomThreadPoolLibrary.dll
+D:\home\edu\parallel\CustomThreadPoolLibrary\obj\Debug\CustomThreadPoolLibrary.pdb
