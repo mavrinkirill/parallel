@@ -41,21 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Examples\WithAwait\Generic\Successful.cs" />
-    <Compile Include="Examples\WithAwait\Void\Successful.cs" />
-    <Compile Include="Examples\WithAwait\Void\WithExceptionExample.cs" />
-    <Compile Include="Examples\WithoutAwait\Generic\WithExceptionExample.cs" />
+    <Compile Include="Examples\Generic\WithAwait\Successful.cs" />
+    <Compile Include="Examples\Void\WithAwait\Successful.cs" />
+    <Compile Include="Examples\Void\WithAwait\WithExceptionExample.cs" />
+    <Compile Include="Examples\Generic\WithoutAwait\WithExceptionExample.cs" />
     <Compile Include="Extensions\CustomTaskExtension.cs" />
     <Compile Include="Helpers\ActionCreator.cs" />
     <Compile Include="Helpers\CustomThreadPoolHelper.cs" />
     <Compile Include="Helpers\FuncCreator.cs" />
+    <Compile Include="Helpers\ActionTestGenerator.cs" />
+    <Compile Include="Highload\ListActions.cs" />
     <Compile Include="IExample.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Examples\WithoutAwait\Void\Successful.cs" />
-    <Compile Include="Examples\WithoutAwait\Void\WithExceptionExample.cs" />
-    <Compile Include="Examples\WithoutAwait\Void\WithInterruptExample.cs" />
-    <Compile Include="Examples\WithoutAwait\Generic\Successful.cs" />
-    <Compile Include="Examples\WithoutAwait\Generic\WithInterruptExample.cs" />
+    <Compile Include="Examples\Void\WithoutAwait\Successful.cs" />
+    <Compile Include="Examples\Void\WithoutAwait\WithExceptionExample.cs" />
+    <Compile Include="Examples\Void\WithoutAwait\WithInterruptExample.cs" />
+    <Compile Include="Examples\Generic\WithoutAwait\Successful.cs" />
+    <Compile Include="Examples\Generic\WithoutAwait\WithInterruptExample.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CustomThreadPoolLibrary\CustomThreadPoolLibrary.csproj">

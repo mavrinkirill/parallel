@@ -4,24 +4,19 @@ using CustomThreadPoolLibrary.ThreadPool;
 using Examples.Extensions;
 using Examples.Helpers;
 
-namespace Examples.Examples.WithoutAwait.Void
+namespace Examples.Examples.Generic.WithoutAwait
 {
     public class WithExceptionExample : IExample
     {
-        private readonly Action action = ActionCreator.SpinWaitWithException(2);
+        private readonly Func<int> func = FuncCreator.SpinWaitWithException(2, 4);
 
-        private CustomTask task;
+        private CustomTask<int> task;
 
         public int ThreadsCount => 1;
 
-        public void Initialization()
-        {
-            CustomThreadPool.TrySetMaxThreads(ThreadsCount);
-        }
-
         public void Work()
         {
-            task = CustomThreadPool.EnqueueTask(action);
+            task = CustomThreadPool.EnqueueTask(func);
         }
 
         public void MenuCommandProcessor(int command)

@@ -1,6 +1,4 @@
-﻿using System.Threading;
-
-namespace CustomThreadPoolLibrary.Task
+﻿namespace CustomThreadPoolLibrary.Task
 {
     public sealed class CustomTask : CustomTaskBase
     {

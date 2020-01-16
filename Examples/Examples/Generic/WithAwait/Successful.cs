@@ -4,7 +4,7 @@ using CustomThreadPoolLibrary.ThreadPool;
 using Examples.Extensions;
 using Examples.Helpers;
 
-namespace Examples.Examples.WithoutAwait.Generic
+namespace Examples.Examples.Generic.WithAwait
 {
     public class Successful : IExample
     {
@@ -14,14 +14,13 @@ namespace Examples.Examples.WithoutAwait.Generic
 
         public int ThreadsCount => 1;
 
-        public void Initialization()
-        {
-            CustomThreadPool.TrySetMaxThreads(ThreadsCount);
-        }
-
         public void Work()
         {
             task = CustomThreadPool.EnqueueTask(func);
+            Console.WriteLine("Before await");
+            var result = task.AwaitResult();
+            Console.WriteLine("After await");
+            Console.WriteLine($"Result: {result}");
         }
 
         public void MenuCommandProcessor(int command)

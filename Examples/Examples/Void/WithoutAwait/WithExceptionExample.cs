@@ -4,20 +4,15 @@ using CustomThreadPoolLibrary.ThreadPool;
 using Examples.Extensions;
 using Examples.Helpers;
 
-namespace Examples.Examples.WithoutAwait.Void
+namespace Examples.Examples.Void.WithoutAwait
 {
-    public class Successful : IExample
+    public class WithExceptionExample : IExample
     {
-        private readonly Action action = ActionCreator.SpinWait(3);
+        private readonly Action action = ActionCreator.SpinWaitWithException(2);
 
         private CustomTask task;
 
         public int ThreadsCount => 1;
-
-        public void Initialization()
-        {
-            CustomThreadPool.TrySetMaxThreads(ThreadsCount);
-        }
 
         public void Work()
         {

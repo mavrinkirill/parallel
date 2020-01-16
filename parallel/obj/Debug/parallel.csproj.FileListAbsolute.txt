@@ -3,10 +3,8 @@ D:\home\edu\parallel\parallel\bin\Debug\parallel.exe
 D:\home\edu\parallel\parallel\bin\Debug\parallel.pdb
 D:\home\edu\parallel\parallel\bin\Debug\CustomThreadPoolLibrary.dll
 D:\home\edu\parallel\parallel\bin\Debug\Examples.dll
-D:\home\edu\parallel\parallel\bin\Debug\Infrastructure.dll
 D:\home\edu\parallel\parallel\bin\Debug\CustomThreadPoolLibrary.pdb
 D:\home\edu\parallel\parallel\bin\Debug\Examples.pdb
-D:\home\edu\parallel\parallel\bin\Debug\Infrastructure.pdb
 D:\home\edu\parallel\parallel\obj\Debug\parallel.csprojAssemblyReference.cache
 D:\home\edu\parallel\parallel\obj\Debug\parallel.csproj.CoreCompileInputs.cache
 D:\home\edu\parallel\parallel\obj\Debug\parallel.csproj.CopyComplete

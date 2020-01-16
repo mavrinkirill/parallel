@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Threading;
 using CustomThreadPoolLibrary.CancellationToken;
 using CustomThreadPoolLibrary.Task;
-using Infrastructure;
 
 namespace CustomThreadPoolLibrary.ThreadPool
 {
@@ -14,6 +13,8 @@ namespace CustomThreadPoolLibrary.ThreadPool
         private static Thread[] _workers;
 
         private static readonly Queue<CustomTaskBase> TaskQueue = new Queue<CustomTaskBase>();
+
+        private static bool IsDebugModeOn = true;
 
         public static int TaskQueueCount => TaskQueue.Count;
 
@@ -106,7 +107,7 @@ namespace CustomThreadPoolLibrary.ThreadPool
                 {
                     while (TaskQueue.Count == 0)
                     {
-                        ConsoleHelper.WriteCyanLine($"Thread #{threadId} doesn't take new task. TaskQueue empty");
+                        TaskDebug($"Thread #{threadId} doesn't take new task. TaskQueue empty");
                         Monitor.Wait(Locker);
                     }
                     task = TaskQueue.Dequeue();
@@ -117,7 +118,7 @@ namespace CustomThreadPoolLibrary.ThreadPool
                     return;
                 }
 
-                ConsoleHelper.WriteGreenLine($"Thread #{threadId} take new task.");
+                TaskDebug($"Thread #{threadId} take new task.");
 
                 try
                 {
@@ -132,6 +133,14 @@ namespace CustomThreadPoolLibrary.ThreadPool
                 {
                     task.SetExceptionStatus(e);
                 }
+            }
+        }
+
+        private static void TaskDebug(string message)
+        {
+            if (IsDebugModeOn)
+            {
+                Console.WriteLine($"TASK: {message}");
             }
         }
     }

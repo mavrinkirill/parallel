@@ -1,15 +1,20 @@
 ﻿using System;
+using CustomThreadPoolLibrary.ThreadPool;
 using Examples;
+using HighloadTests = Examples.Highload;
+using Generic = Examples.Examples.Generic;
+using Void = Examples.Examples.Void;
 
 namespace parallel
 {
     class Program
     {
-        private static readonly IExample Example = new Examples.Examples.WithAwait.Generic.Successful();
+        //private static readonly IExample Example = new Void.WithAwait.Successful();
+        private static readonly IExample Example = new Void.WithAwait.Successful();
 
         static void Main(string[] args)
         {
-            Example.Initialization();
+            CustomThreadPool.TrySetMaxThreads(Example.ThreadsCount);
             Example.Work();
             Menu();
         }

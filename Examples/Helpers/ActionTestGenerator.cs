@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Examples.Helpers;
 
-namespace parallel
+namespace Examples.Helpers
 {
-    public static class TestGenerator
+    public static class ActionTestGenerator
     {
         private static Random _rnd = new Random();
 

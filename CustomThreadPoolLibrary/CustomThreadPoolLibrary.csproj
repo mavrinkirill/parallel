@@ -54,11 +54,5 @@
     <Compile Include="Task\CustomTaskStatus.cs" />
     <Compile Include="ThreadPool\CustomThreadPool.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
-      <Project>{9C3377CD-E139-437C-B342-512E7CF8C61F}</Project>
-      <Name>Infrastructure</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
